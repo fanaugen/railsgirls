@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<div class="thumbnail">
+  <img src="<%= @bicycle.picture %>" alt="bicycle" />
+</div>
+
 <p>
   <strong>Make:</strong>
   <%= @bicycle.make %>
@@ -13,11 +17,6 @@
 <p>
   <strong>Description:</strong>
   <%= @bicycle.description %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= @bicycle.picture %>
 </p>
 
 <p>
