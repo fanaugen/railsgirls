@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @bicycle.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @bicycle.model %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @bicycle.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @bicycle.picture %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @bicycle.colour %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @bicycle.type %>
+</p>
+
+<%= link_to 'Edit', edit_bicycle_path(@bicycle) %> |
+<%= link_to 'Back', bicycles_path %>

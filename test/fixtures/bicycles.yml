@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  make: MyString
+  model: MyString
+  description: MyText
+  picture: MyString
+  colour: MyString
+  type: 
+
+two:
+  make: MyString
+  model: MyString
+  description: MyText
+  picture: MyString
+  colour: MyString
+  type: 

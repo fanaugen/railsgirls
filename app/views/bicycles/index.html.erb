@@ -1,0 +1,37 @@
+<h1>Listing bicycles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th>Colour</th>
+      <th>Type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bicycles.each do |bicycle| %>
+      <tr>
+        <td><%= bicycle.make %></td>
+        <td><%= bicycle.model %></td>
+        <td><%= bicycle.description %></td>
+        <td><%= bicycle.picture %></td>
+        <td><%= bicycle.colour %></td>
+        <td><%= bicycle.type %></td>
+        <td><%= link_to 'Show', bicycle %></td>
+        <td><%= link_to 'Edit', edit_bicycle_path(bicycle) %></td>
+        <td><%= link_to 'Destroy', bicycle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bicycle', new_bicycle_path %>
