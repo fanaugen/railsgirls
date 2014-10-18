@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141018134335) do
+ActiveRecord::Schema.define(version: 20141018141431) do
 
   create_table "bicycles", force: true do |t|
     t.string   "make"
@@ -19,9 +19,11 @@ ActiveRecord::Schema.define(version: 20141018134335) do
     t.text     "description"
     t.string   "picture"
     t.string   "colour"
-    t.string   "type"
+    t.string   "bicycle_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "price"
+    t.decimal  "release_year"
   end
 
 end
