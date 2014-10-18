@@ -38,6 +38,10 @@ group :development do
   gem 'guard'
   gem 'guard-livereload', require: false
   gem 'xray-rails'
+  require 'rbconfig'
+  if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
+    gem 'wdm', '>= 0.1.0'
+  end
 end
 
 # Use ActiveModel has_secure_password
